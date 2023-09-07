@@ -49,7 +49,7 @@ public class Main {
 //                for (int k = 0; k < users.length; k++) {
 //                    if (users[k].getBasket().containsProductInBasket(product)){
 //                        System.out.println("Вы уже добавили этот товар в корзину");
-//                        users[k].getBasket().removeProduct(product);
+//                        users[k].getProducts().removeProduct(product);
 //                    }
 ////                    users[k].getBasket().addProduct(product);
 //                }
