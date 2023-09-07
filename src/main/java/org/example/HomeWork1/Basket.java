@@ -1,11 +1,10 @@
 package org.example.HomeWork1;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class Basket {
     private Product[] products;
+    private HashMap<Product, Integer> productsInBasket;
 
     public Basket() {
         this.products = new Product[0];
@@ -44,12 +43,23 @@ public class Basket {
     }
 
 
-    public List<Product> getProductList() {
-        List<Product> productList = new ArrayList<>();
-        for (Product product : products) {
-            productList.add(product);
-        }
-        return productList;
+//    public List<Product> getProductList() {
+//        List<Product> productList = new ArrayList<>();
+//        for (Product product : products) {
+//            productList.add(product);
+//        }
+//        return productList;
+//    }
+
+//    public Set<Product> getProductsInBasket() {
+//        if (productsInBasket == null) {
+//            productsInBasket = new HashSet<>();
+//        }
+//        return productsInBasket;
+//    }
+
+    public int getProductCount(Product product) {
+        int i = 0;
+        return i;
     }
-    
 }

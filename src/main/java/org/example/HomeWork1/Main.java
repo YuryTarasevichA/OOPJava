@@ -1,8 +1,6 @@
 package org.example.HomeWork1;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,32 +43,30 @@ public class Main {
         users[2].getBasket().addProduct(productsForCategory2[1]);
 
 
-        for (int i = 0; i < categories.length; i++) {
-            for (int j = 0; j < categories[i].getProducts().length; j++) {
-                Product product = categories[i].getProducts()[j];
-                for (int k = 0; k < users.length; k++) {
-                    if (users[k].getBasket().containsProductInBasket(product)){
-                        System.out.println("Вы уже добавили этот товар в корзину");
-                        users[k].getBasket().removeProduct(product);
-                    }
-//                    users[k].getBasket().addProduct(product);
-                }
-            }
-        }
+//        for (int i = 0; i < categories.length; i++) {
+//            for (int j = 0; j < categories[i].getProducts().length; j++) {
+//                Product product = categories[i].getProducts()[j];
+//                for (int k = 0; k < users.length; k++) {
+//                    if (users[k].getBasket().containsProductInBasket(product)){
+//                        System.out.println("Вы уже добавили этот товар в корзину");
+//                        users[k].getBasket().removeProduct(product);
+//                    }
+////                    users[k].getBasket().addProduct(product);
+//                }
+//            }
+//        }
 //        for (int i = 0; i < users.length; i++) {
-//            HashMap<Product, Integer> productsInBasket = users[i].getBasket().getProductsInBasket();
-//            for (Map.Entry<Product, Integer> entry : productsInBasket.entrySet()) {
-//                Product product = entry.getKey();
-//                int count = entry.getValue();
-//                if (count > 1) {
-//                    entry.setValue(count - 1);
+//            Set<Product> productsInBasket = users[i].getBasket().getProductsInBasket();
+//            Iterator<Product> iterator = productsInBasket.iterator();
+//            while (iterator.hasNext()) {
+//                Product product = iterator.next();
+//                if (users[i].getBasket().getProductCount(product) == 1) {
+//                    iterator.remove();
 //                } else {
 //                    users[i].getBasket().removeProduct(product);
 //                }
 //            }
 //        }
-
-
 
         for (int i = 0; i < users.length; i++) {
             System.out.println("Покупки пользователя " + users[i].getUsername() + ":");
