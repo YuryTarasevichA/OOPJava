@@ -1,5 +1,9 @@
 package org.example.Lesson4;
 
+import org.example.Lesson4.HomeWork4.TeacherService;
+import org.example.Lesson4.Task1.Student;
+import org.example.Lesson4.Task2.StudentService;
+
 import java.util.List;
 
 public class Main {
@@ -26,10 +30,16 @@ public class Main {
 //        System.out.println(userList);
 //        userList.sort(new UserComporator<User>());
 //        System.out.println(userList);
-//        StudentService studentService = new StudentService();
-//        studentService.create("Student1",10,11);
-//        studentService.create("Student2",14,12);
-//        studentService.create("Student3",17,19);
-//        System.out.println(studentService.getAll());
+        StudentService studentService = new StudentService();
+        studentService.createStudent("Student1",10,11);
+        studentService.createStudent("Student2",14,12);
+        studentService.createStudent("Student3",17,19);
+        System.out.println(studentService.getAll());
+        TeacherService teacherService = new TeacherService();
+        teacherService.createTeacher("Teacher1","Biology");
+        teacherService.createTeacher("Teacher2","Math");
+        teacherService.createTeacher("Teacher3","Physics");
+        teacherService.createTeacher("Teacher4","Geography");
+        System.out.println(teacherService.getAll());
     }
 }

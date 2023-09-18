@@ -1,6 +1,6 @@
 package org.example.Lesson4.Task2;
 
-import org.example.Lesson4.User;
+import org.example.Lesson4.Task1.User;
 
 import java.util.List;
 

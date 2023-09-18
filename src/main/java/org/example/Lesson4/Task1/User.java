@@ -1,4 +1,4 @@
-package org.example.Lesson4;
+package org.example.Lesson4.Task1;
 
 public class User {
     public int getScore(){
@@ -8,6 +8,7 @@ public class User {
             return 0;
         }
     }
+
     @Override
     public String toString() {
         return "User{" +

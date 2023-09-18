@@ -78,9 +78,7 @@ public class Main {
         saveGameHistory(game); // Сохранение игры в файл
     }
     private static void viewGameHistory() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите имя файла с логами: ");
-        String fileName = scanner.nextLine();
+        String fileName = "save.log";
         File logFile = new File(fileName);
         if (!logFile.exists()) {
             logger.log(Level.SEVERE, "Файл не найден: {0}", fileName);
