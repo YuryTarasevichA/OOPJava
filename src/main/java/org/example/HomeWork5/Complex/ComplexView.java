@@ -26,7 +26,7 @@ public class ComplexView {
                     b = scanner.nextFloat();
                     complex1 = new ComplexNumber(a, b);
 
-                    System.out.println("Введите действительную и мнимую части первого комплексного числа:");
+                    System.out.println("Введите действительную и мнимую части второго комплексного числа:");
                     a = scanner.nextFloat();
                     b = scanner.nextFloat();
                     complex2 = new ComplexNumber(a, b);
@@ -41,7 +41,7 @@ public class ComplexView {
                     b = scanner.nextFloat();
                     complex1 = new ComplexNumber(a, b);
 
-                    System.out.println("Введите действительную и мнимую части первого комплексного числа:");
+                    System.out.println("Введите действительную и мнимую части второго комплексного числа:");
                     a = scanner.nextFloat();
                     b = scanner.nextFloat();
                     complex2 = new ComplexNumber(a, b);
@@ -56,7 +56,7 @@ public class ComplexView {
                     b = scanner.nextFloat();
                     complex1 = new ComplexNumber(a, b);
 
-                    System.out.println("Введите действительную и мнимую части первого комплексного числа:");
+                    System.out.println("Введите действительную и мнимую части второго комплексного числа:");
                     a = scanner.nextFloat();
                     b = scanner.nextFloat();
                     complex2 = new ComplexNumber(a, b);
@@ -71,7 +71,7 @@ public class ComplexView {
                     b = scanner.nextFloat();
                     complex1 = new ComplexNumber(a, b);
 
-                    System.out.println("Введите действительную и мнимую части первого комплексного числа:");
+                    System.out.println("Введите действительную и мнимую части второго комплексного числа:");
                     a = scanner.nextFloat();
                     b = scanner.nextFloat();
                     complex2 = new ComplexNumber(a, b);
