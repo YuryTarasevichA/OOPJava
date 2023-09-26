@@ -7,10 +7,7 @@ public class BookGenere implements Genre {
     public BookGenere(String genreOfBook) {
         this.genreOfBook = genreOfBook;
     }
-
-    /**
-     * @return
-     */
+    
     @Override
     public String takeGenre() {
         return genreOfBook;

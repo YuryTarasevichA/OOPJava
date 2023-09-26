@@ -1,23 +1,33 @@
 package org.example.Lesson6.Task1;
 
 public class ElectronBook extends Book{
-    private int weite;
+    private int weight;
     private FormatElectronBook format;
 
-    public ElectronBook(String name, String addres,
-                        Book genre, int weite,
+
+    public ElectronBook(String name, String auter,
+                        BookGenere genre, int weight,
                         FormatElectronBook format) {
-        super(name, addres, genre);
-        this.weite = weite;
+        super(name, auter, genre);
+        this.weight = weight;
         this.format = format;
     }
 
-    public int getWeite() {
-        return weite;
+
+    @Override
+    public String toString() {
+        return "ElectronBook{" +
+                "format=" + format +
+                ", weight=" + weight +
+                "} " + super.toString();
     }
 
-    public void setWeite(int weite) {
-        this.weite = weite;
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     public FormatElectronBook getFormat() {

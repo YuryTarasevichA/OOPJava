@@ -1,25 +1,22 @@
-package org.example.lesson1.Task5;
+package org.example.Lesson1.Task5;
 
-public class Dog extends Animal {
-    public static int countDog;
-    public static final int canRun = 500;
-    public static final int  canSwim = 10;
-
-    public Dog(String name) {
+public class Tiger extends Cat {
+    public static final int canTigerRun = 400;
+    public static final int canTigerSwim = 100;
+    public Tiger(String name) {
         super(name);
-        countDog++;
     }
 
     @Override
     public void swim(int distance) {
-        if (distance > canSwim){
+        if (distance > canTigerSwim){
             System.out.println(name + " Не проплыл ");
         }else System.out.println(name + " Проплыл " + distance + " метров");
     }
 
     @Override
     public void run(int distance) {
-        if (distance > canRun){
+        if (distance > canTigerRun){
             System.out.println(name + " Не пробежал ");
         }else System.out.println(name + " Пробежал " + distance + " метров");
     }

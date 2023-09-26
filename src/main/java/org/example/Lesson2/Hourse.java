@@ -1,6 +1,6 @@
 package org.example.Lesson2;
 
-import org.example.lesson1.Animal;
+import org.example.Lesson1.Animal;
 
 public class Hourse extends Animal implements Transport {
     @Override

@@ -1,4 +1,4 @@
-package org.example.lesson1;
+package org.example.Lesson1;
 
 //@Data // генерирует геттеры и сеттеры
 //@AllArgsConstructor // генерирует конструктор

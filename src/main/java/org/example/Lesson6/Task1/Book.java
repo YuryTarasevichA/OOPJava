@@ -2,21 +2,21 @@ package org.example.Lesson6.Task1;
 
 public class Book {
     private String name;
+    private String author;
+    private BookGenere genre;
 
-    private String auter;
-    private Book genre;
 
-
-    public Book(String name, String auter, Book genre) {
+    public Book(String name, String author, BookGenere genre) {
         this.name = name;
-        this.auter = auter;
+        this.author = author;
         this.genre = genre;
+
     }
 
     @Override
     public String toString() {
-        return "org.example.Lesson6.Task2.Book{" +
-                "addres='" + auter + '\'' +
+        return "Book{" +
+                "author='" + author + '\'' +
                 ", genre=" + genre +
                 ", name='" + name + '\'' +
                 '}';
@@ -30,19 +30,19 @@ public class Book {
         this.name = name;
     }
 
-    public String getAuter() {
-        return auter;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAuter(String auter) {
-        this.auter = auter;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
-    public Book getGenre() {
+    public BookGenere getGenre() {
         return genre;
     }
 
-    public void setGenre(Book genre) {
+    public void setGenre(BookGenere genre) {
         this.genre = genre;
     }
 }
