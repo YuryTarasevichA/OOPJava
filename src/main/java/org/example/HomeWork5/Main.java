@@ -30,11 +30,10 @@ public class Main {
                     complexView.program();
                     break;
                 case 3:
-                    System.out.println("Выход из программы...");
+                    logger.log(Level.SEVERE,"Выход из программы...");
                     break;
                 default:
                     logger.log(Level.SEVERE, "Неправильный выбор.");
-                    System.out.println("Неправильный выбор. Попробуйте еще раз.");
                     break;
             }
         } while (choise != 3);
